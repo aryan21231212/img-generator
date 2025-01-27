@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    position: absolute;
+}
+
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    width: 100vw;
+
+}
+
+.head h1{
+    color:white;
+    margin: 15px 0px;
+    font-family:fantasy;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 600px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(210, 64, 64);
+    color: white;
+}
+
+#img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#img img{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 4px 5px 8px;
+    animation:noob 2s ease-in 0s 1 normal ;
+}
+
+@keyframes noob{
+    from{
+        transform: translate(-300px);
+    }
+    to{
+        transform: translate(20px);
+    }
+}
